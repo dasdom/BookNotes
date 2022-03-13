@@ -14,19 +14,14 @@
 		F2E8933127C93C3B0080B8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2E8933027C93C3B0080B8A3 /* Assets.xcassets */; };
 		F2E8933427C93C3B0080B8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E8933227C93C3B0080B8A3 /* LaunchScreen.storyboard */; };
 		F2E8933F27C93C3B0080B8A3 /* BookNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8933E27C93C3B0080B8A3 /* BookNotesTests.swift */; };
-		F2E8934927C93C3B0080B8A3 /* BookNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8934827C93C3B0080B8A3 /* BookNotesUITests.swift */; };
-		F2E8934B27C93C3B0080B8A3 /* BookNotesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8934A27C93C3B0080B8A3 /* BookNotesUITestsLaunchTests.swift */; };
+		F2E8935827C93CBF0080B8A3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8935727C93CBF0080B8A3 /* Book.swift */; };
+		F2E8935C27C93D060080B8A3 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8935B27C93D060080B8A3 /* Note.swift */; };
+		F2E8935F27C93D780080B8A3 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8935E27C93D780080B8A3 /* BooksViewController.swift */; };
+		F2E8936127C93EE60080B8A3 /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8936027C93EE60080B8A3 /* BooksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F2E8933B27C93C3B0080B8A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F2E8931C27C93C3A0080B8A3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F2E8932327C93C3A0080B8A3;
-			remoteInfo = BookNotes;
-		};
-		F2E8934527C93C3B0080B8A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F2E8931C27C93C3A0080B8A3 /* Project object */;
 			proxyType = 1;
@@ -46,9 +41,10 @@
 		F2E8933527C93C3B0080B8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2E8933A27C93C3B0080B8A3 /* BookNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E8933E27C93C3B0080B8A3 /* BookNotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNotesTests.swift; sourceTree = "<group>"; };
-		F2E8934427C93C3B0080B8A3 /* BookNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2E8934827C93C3B0080B8A3 /* BookNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNotesUITests.swift; sourceTree = "<group>"; };
-		F2E8934A27C93C3B0080B8A3 /* BookNotesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookNotesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2E8935727C93CBF0080B8A3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		F2E8935B27C93D060080B8A3 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		F2E8935E27C93D780080B8A3 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		F2E8936027C93EE60080B8A3 /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2E8934127C93C3B0080B8A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +70,6 @@
 			children = (
 				F2E8932627C93C3A0080B8A3 /* BookNotes */,
 				F2E8933D27C93C3B0080B8A3 /* BookNotesTests */,
-				F2E8934727C93C3B0080B8A3 /* BookNotesUITests */,
 				F2E8932527C93C3A0080B8A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +79,6 @@
 			children = (
 				F2E8932427C93C3A0080B8A3 /* BookNotes.app */,
 				F2E8933A27C93C3B0080B8A3 /* BookNotesTests.xctest */,
-				F2E8934427C93C3B0080B8A3 /* BookNotesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +89,9 @@
 				F2E8932727C93C3A0080B8A3 /* AppDelegate.swift */,
 				F2E8932927C93C3A0080B8A3 /* SceneDelegate.swift */,
 				F2E8932B27C93C3A0080B8A3 /* ViewController.swift */,
+				F2E8935E27C93D780080B8A3 /* BooksViewController.swift */,
+				F2E8936027C93EE60080B8A3 /* BooksView.swift */,
+				F2E8935D27C93D520080B8A3 /* Model */,
 				F2E8932D27C93C3A0080B8A3 /* Main.storyboard */,
 				F2E8933027C93C3B0080B8A3 /* Assets.xcassets */,
 				F2E8933227C93C3B0080B8A3 /* LaunchScreen.storyboard */,
@@ -118,13 +108,13 @@
 			path = BookNotesTests;
 			sourceTree = "<group>";
 		};
-		F2E8934727C93C3B0080B8A3 /* BookNotesUITests */ = {
+		F2E8935D27C93D520080B8A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F2E8934827C93C3B0080B8A3 /* BookNotesUITests.swift */,
-				F2E8934A27C93C3B0080B8A3 /* BookNotesUITestsLaunchTests.swift */,
+				F2E8935727C93CBF0080B8A3 /* Book.swift */,
+				F2E8935B27C93D060080B8A3 /* Note.swift */,
 			);
-			path = BookNotesUITests;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +155,6 @@
 			productReference = F2E8933A27C93C3B0080B8A3 /* BookNotesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F2E8934327C93C3B0080B8A3 /* BookNotesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F2E8935427C93C3B0080B8A3 /* Build configuration list for PBXNativeTarget "BookNotesUITests" */;
-			buildPhases = (
-				F2E8934027C93C3B0080B8A3 /* Sources */,
-				F2E8934127C93C3B0080B8A3 /* Frameworks */,
-				F2E8934227C93C3B0080B8A3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F2E8934627C93C3B0080B8A3 /* PBXTargetDependency */,
-			);
-			name = BookNotesUITests;
-			productName = BookNotesUITests;
-			productReference = F2E8934427C93C3B0080B8A3 /* BookNotesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,15 +164,12 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = dasdom;
 				TargetAttributes = {
 					F2E8932327C93C3A0080B8A3 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 					F2E8933927C93C3B0080B8A3 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = F2E8932327C93C3A0080B8A3;
-					};
-					F2E8934327C93C3B0080B8A3 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = F2E8932327C93C3A0080B8A3;
 					};
@@ -221,7 +190,6 @@
 			targets = (
 				F2E8932327C93C3A0080B8A3 /* BookNotes */,
 				F2E8933927C93C3B0080B8A3 /* BookNotesTests */,
-				F2E8934327C93C3B0080B8A3 /* BookNotesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2E8934227C93C3B0080B8A3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,9 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E8935C27C93D060080B8A3 /* Note.swift in Sources */,
+				F2E8935827C93CBF0080B8A3 /* Book.swift in Sources */,
 				F2E8932C27C93C3A0080B8A3 /* ViewController.swift in Sources */,
+				F2E8936127C93EE60080B8A3 /* BooksView.swift in Sources */,
 				F2E8932827C93C3A0080B8A3 /* AppDelegate.swift in Sources */,
 				F2E8932A27C93C3A0080B8A3 /* SceneDelegate.swift in Sources */,
+				F2E8935F27C93D780080B8A3 /* BooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +237,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2E8934027C93C3B0080B8A3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F2E8934927C93C3B0080B8A3 /* BookNotesUITests.swift in Sources */,
-				F2E8934B27C93C3B0080B8A3 /* BookNotesUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +244,6 @@
 			isa = PBXTargetDependency;
 			target = F2E8932327C93C3A0080B8A3 /* BookNotes */;
 			targetProxy = F2E8933B27C93C3B0080B8A3 /* PBXContainerItemProxy */;
-		};
-		F2E8934627C93C3B0080B8A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F2E8932327C93C3A0080B8A3 /* BookNotes */;
-			targetProxy = F2E8934527C93C3B0080B8A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -538,52 +489,6 @@
 			};
 			name = Release;
 		};
-		F2E8935527C93C3B0080B8A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6PD97MRX4;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.BookNotesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookNotes;
-			};
-			name = Debug;
-		};
-		F2E8935627C93C3B0080B8A3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6PD97MRX4;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.dasdom.BookNotesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookNotes;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -610,15 +515,6 @@
 			buildConfigurations = (
 				F2E8935227C93C3B0080B8A3 /* Debug */,
 				F2E8935327C93C3B0080B8A3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F2E8935427C93C3B0080B8A3 /* Build configuration list for PBXNativeTarget "BookNotesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2E8935527C93C3B0080B8A3 /* Debug */,
-				F2E8935627C93C3B0080B8A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
